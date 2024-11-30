@@ -1,0 +1,20 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.movie-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    cursor: pointer;
+}
+
+.movie-details {
+    text-align: left;
+}
+
+.error {
+    color: red;
+}

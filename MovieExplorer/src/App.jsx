@@ -1,8 +1,14 @@
+import MovieList from './components/MovieList'
+import './App.css'
+
 
 function App() {
   return (
     <>
-      <h1>Movie Explorer</h1>
+      <div className="App">
+        <h1>Movie Explorer</h1>
+        <MovieList />
+      </div>
     </>
   )
 }

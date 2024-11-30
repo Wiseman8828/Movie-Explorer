@@ -3,18 +3,32 @@
     text-align: center;
 }
 
-.movie-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px auto;
-    max-width: 600px;
-    cursor: pointer;
-}
-
-.movie-details {
-    text-align: left;
-}
-
 .error {
     color: red;
+}
+
+.movie-list-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    width: 300px;
+    justify-self: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }

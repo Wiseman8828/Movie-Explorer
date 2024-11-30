@@ -49,8 +49,8 @@ const MovieList = () => {
     }
 
     return (
-        <div>
-            <div>
+        <div className="movie-list-container">
+            <div className="search-bar">
                 <input 
                     type="text" 
                     placeholder="Search movies..." 
@@ -64,9 +64,11 @@ const MovieList = () => {
                 hasMore={hasMore}
                 loader={loading && <p>Loading...</p>}
             >
-                {movies.map((movie) => (
-                    <MovieItem key={movie.imdbID} movie={movie} />
-                ))}
+                <div className="movie-grid">
+                    {movies.map((movie) => (
+                        <MovieItem key={movie.imdbID} movie={movie} />
+                    ))}
+                </div>
             </InfiniteScroll>
         </div>
     )
